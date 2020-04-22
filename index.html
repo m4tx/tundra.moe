@@ -19,22 +19,20 @@
 
 <main role="main">
     <div class="jumbotron">
-        <div class="container clearfix">
-            <img src="img/screenshot1.png" style="max-width: 400px"
-                 class="float-right img-fluid mx-auto d-block"
-                 alt="Screenshot of Tundra">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="display-3" style="font-weight: 300">Tundra</h1>
+                    <p>Tundra is an open-source MyAnimeList scrobbler application for Linux. It automatically detects media players running on your computer, checks for any anime videos playing, and marks them as watched on your MAL profile.</p>
 
-            <h1 class="display-3" style="font-weight: 300">Tundra</h1>
-            <p>
-                Tundra is an open-source MyAnimeList scrobbler application for
-                Linux. It automatically detects media players running on your
-                computer, checks for any anime videos playing, and marks them as
-                watched on your MAL profile.
-            </p>
+                    <a href="https://snapcraft.io/tundra"><img src="https://snapcraft.io/static/images/badges/en/snap-store-black.svg" alt="Get it from the Snap Store"></a>
+                    <a href="https://github.com/m4tx/tundra" class="btn btn-primary btn-lg ml-2">See on GitHub</a>
+                </div>
 
-            <a href="https://snapcraft.io/tundra"><img src="https://snapcraft.io/static/images/badges/en/snap-store-black.svg"></a>
-
-            <a href="https://github.com/m4tx/tundra" class="btn btn-primary btn-lg">See on GitHub</a>
+                <div class="col-lg-4">
+                    <img src="img/screenshot1.png" class="img-fluid mx-auto d-block" alt="Screenshot of Tundra">
+                </div>
+            </div>
         </div>
     </div>
 
@@ -42,211 +40,77 @@
         <div class="row">
             <div class="col-md-4">
                 <h2>Open-source</h2>
-                <p>Tundra is open-source, which means that anyone can look at
-                    its source code to look how it is working internally, make
-                    it better, and share their improvements with everyone.</p>
+                <p>Tundra is open-source, which means that anyone can look at its source code to look how it is working internally, make it better, and share their improvements with everyone.</p>
             </div>
             <div class="col-md-4">
                 <h2>Lightweight</h2>
-                <p>The application itself is very lightweight and is almost
-                    non-existent to your system resources. It can run either
-                    with a graphical interface, or as a daemon in the
-                    background, so it's invisible during your normal work.</p>
+                <p>The application itself is very lightweight and is almost non-existent to your system resources. It can run either with a graphical interface, or as a daemon in the background, so it's invisible during your normal work.</p>
             </div>
             <div class="col-md-4">
                 <h2>With love for Linux</h2>
-                <p>Tundra is a response to other great projects, like <a
-                        href="https://taiga.moe/" target="_blank">Taiga</a> and
-                    <a href="https://malupdaterosx.moe/hachidori/"
-                       target="_blank">Hachidori</a> and makes the lives of
-                    Linux-based operating systems users' lives easier as well.
-                </p>
+                <p>Tundra is a response to other great projects, like <a href="https://taiga.moe/" target="_blank">Taiga</a> and<a href="https://malupdaterosx.moe/hachidori/" target="_blank">Hachidori</a> and makes the lives of Linux-based operating systems users' lives easier as well.</p>
             </div>
         </div>
 
         <hr>
 
         <h2>FAQ</h2>
-        <div class="accordion" id="accordionExample">
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link" type="button"
-                                data-toggle="collapse"
-                                data-target="#collapseOne" aria-expanded="true"
-                                aria-controls="collapseOne">
-                            What platforms does it run on?
-                        </button>
-                    </h2>
-                </div>
-
-                <div id="collapseOne" class="collapse"
-                     aria-labelledby="headingOne"
-                     data-parent="#accordionExample">
-                    <div class="card-body">
-                        Tundra is made specifically for Linux-based operating
-                        systems. The reason is that there are already great
-                        applications for macOS and Windows, so there is not much
-                        point in providing it for those platforms.
-                    </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">What platforms does it run on?</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">How to use it?</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">What players is it compatible with?</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">What made Tundra possible?</a>
+                    <a class="list-group-item list-group-item-action" id="list-naming-list" data-toggle="list" href="#naming" role="tab" aria-controls="naming">Why call it "Tundra"?</a>
+                    <a class="list-group-item list-group-item-action" id="list-affiliation-list" data-toggle="list" href="#affiliation" role="tab" aria-controls="affiliation">Is it affiliated with MyAnimeList?</a>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button"
-                                data-toggle="collapse"
-                                data-target="#collapseTwo" aria-expanded="false"
-                                aria-controls="collapseTwo">
-                            How to use it?
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseTwo" class="collapse"
-                     aria-labelledby="headingTwo"
-                     data-parent="#accordionExample">
-                    <div class="card-body">
-                        The usage is very simple. First, you need to sign in to
-                        your MyAnimeList account with your MAL username and
-                        password. Make sure that the title you are about to
-                        watch is marked as "watching" or "plan to watch" on your
-                        MAL account. Then, you need to run an MPRIS-enabled (see
-                        below) media player and play a local anime video file.
-                        Its title, poster picture and episode number will appear
-                        after a few seconds in Tundra window. The episode will
-                        be scrobbled after you watch over half of the video. You
-                        will know once you see the notification!
+            <div class="col-md-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                        Tundra is made specifically for Linux-based operating systems. The reason is that there are already great applications for macOS and Windows, so there is not much point in providing it for those platforms.
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button"
-                                data-toggle="collapse"
-                                data-target="#collapseThree"
-                                aria-expanded="false"
-                                aria-controls="collapseThree">
-                            What players is Tundra compatible with?
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseThree" class="collapse"
-                     aria-labelledby="headingThree"
-                     data-parent="#accordionExample">
-                    <div class="card-body">
-                        Tundra should work with any local media player
-                        implementing MPRIS protocol. In particular, it should
-                        work without any problems with these players:
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        The usage is very simple:
+                        <ol>
+                            <li>First, you need to sign in to your MyAnimeList account with your MAL username and password.</li>
+                            <li>Make sure that the title you are about to watch is marked as "watching" or "plan to watch" on your MAL account.</li>
+                            <li>Then, you need to run an MPRIS-enabled (see below) media player and play a local anime video file. Its title, poster picture and episode number will appear after a few seconds in Tundra window.</li>
+                            <li>The episode will be scrobbled after you watch over half of the video. You will know once you see the notification!</li>
+                        </ol>
+                    </div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        Tundra should work with any local media player implementing MPRIS protocol. In particular, it should work without any problems with these players:
 
                         <ul>
-                            <li>
-                                <a href="https://www.videolan.org/vlc/index.html">VLC</a>
-                            </li>
-                            <li>
-                                <a href="https://www.smplayer.info/">SMPlayer</a>
-                            </li>
-                            <li><a href="https://mpv.io/">mpv</a> with <a
-                                    href="https://github.com/hoyon/mpv-mpris">mpv-mpris</a>
-                                plugin
-                            </li>
+                            <li><a href="https://www.videolan.org/vlc/index.html">VLC</a></li>
+                            <li><a href="https://www.smplayer.info/">SMPlayer</a></li>
+                            <li><a href="https://mpv.io/">mpv</a> with <a href="https://github.com/hoyon/mpv-mpris">mpv-mpris</a>plugin</li>
                         </ul>
 
-                        It is not designed to work with players that do not
-                        implement MPRIS protocol, or with video streaming
-                        services running in web browsers.
+                        It is not designed to work with players that do not implement MPRIS protocol, or with video streaming services running in web browsers.
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingContributions">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button"
-                                data-toggle="collapse"
-                                data-target="#collapseContributions"
-                                aria-expanded="false"
-                                aria-controls="collapseContributions">
-                            What made Tundra possible?
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseContributions" class="collapse"
-                     aria-labelledby="headingContributions"
-                     data-parent="#accordionExample">
-                    <div class="card-body">
-                        You can see all the technologies and projects used by
-                        visiting the <a href="https://github.com/m4tx/tundra">Tundra
-                        webpage on GitHub</a>. There are a few notable projects
-                        that made Tundra possible:
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                        You can see all the technologies and projects used by visiting the <a href="https://github.com/m4tx/tundra">Tundra webpage on GitHub</a>. There are a few notable projects that made Tundra possible:
 
                         <ul>
-                            <li><a href="https://taiga.moe/">Taiga</a>, a
-                                similar app for Windows, with its two awesome
-                                side-projects: <a
-                                        href="https://github.com/erengy/anitomy">Anitomy</a>
-                                and
-                                <a href="https://github.com/erengy/anime-relations">Anime
-                                    Relations</a></li>
-                            <li>
-                                <a href="https://github.com/SuperMarcus/myanimelist-api-specification">MyAnimeList
-                                    Unofficial API Specification</a>, which made
-                                it possible to access MAL accounts and marking
-                                episodes as watched automatically
-                            </li>
+                            <li><a href="https://taiga.moe/">Taiga</a>, a similar app for Windows, with its two awesome side-projects: <a href="https://github.com/erengy/anitomy">Anitomy</a>and<a href="https://github.com/erengy/anime-relations">Anime Relations</a></li>
+                            <li><a href="https://github.com/SuperMarcus/myanimelist-api-specification">MyAnimeList Unofficial API Specification</a>, which made it possible to access MAL accounts and marking episodes as watched automatically</li>
                         </ul>
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingName">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button"
-                                data-toggle="collapse"
-                                data-target="#collapseName"
-                                aria-expanded="false"
-                                aria-controls="collapseName">
-                            Why call it "Tundra"?
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseName" class="collapse"
-                     aria-labelledby="headingName"
-                     data-parent="#accordionExample">
-                    <div class="card-body">
-                        Well, there was not that much of thought put in it — if
-                        there is <a href="https://taiga.moe/">Taiga</a>, then
-                        why not Tundra?
+                    <div class="tab-pane fade" id="naming" role="tabpanel" aria-labelledby="list-naming-list">
+                        Well, there was not that much of thought put in it — if there is <a href="https://taiga.moe/">Taiga</a>, then why not Tundra?
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingAffiliation">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button"
-                                data-toggle="collapse"
-                                data-target="#collapseAffiliation"
-                                aria-expanded="false"
-                                aria-controls="collapseAffiliation">
-                            Is this project somehow affiliated with MyAnimeList?
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseAffiliation" class="collapse"
-                     aria-labelledby="headingAffiliation"
-                     data-parent="#accordionExample">
-                    <div class="card-body">
-                        No, this is absolutely independent project, not
-                        affiliated with MyAnimeList by any way.
+                    <div class="tab-pane fade" id="affiliation" role="tabpanel" aria-labelledby="list-affiliation-list">
+                        No, this is absolutely independent project, not affiliated with MyAnimeList by any way.
                     </div>
                 </div>
             </div>
         </div>
 
         <hr>
-
     </div>
-
-
 </main>
 <footer class="container" style="padding-bottom: 20px;">
         &copy; Mateusz Maćkowski, 2020
