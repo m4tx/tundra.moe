@@ -48,7 +48,7 @@
             </div>
             <div class="col-md-4">
                 <h2>With love for Linux</h2>
-                <p>Tundra is a response to other great projects, like <a href="https://taiga.moe/" target="_blank">Taiga</a> and<a href="https://malupdaterosx.moe/hachidori/" target="_blank">Hachidori</a> and makes the lives of Linux-based operating systems users' lives easier as well.</p>
+                <p>Tundra is a response to other great projects, like <a href="https://taiga.moe/" target="_blank">Taiga</a> and <a href="https://malupdaterosx.moe/hachidori/" target="_blank">Hachidori</a> and makes the lives of Linux-based operating systems users' lives easier as well.</p>
             </div>
         </div>
 
@@ -58,51 +58,61 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">What platforms does it run on?</a>
-                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">How to use it?</a>
-                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">What players is it compatible with?</a>
-                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">What made Tundra possible?</a>
-                    <a class="list-group-item list-group-item-action" id="list-naming-list" data-toggle="list" href="#naming" role="tab" aria-controls="naming">Why call it "Tundra"?</a>
-                    <a class="list-group-item list-group-item-action" id="list-affiliation-list" data-toggle="list" href="#affiliation" role="tab" aria-controls="affiliation">Is it affiliated with MyAnimeList?</a>
+                    <a class="list-group-item list-group-item-action active" id="list-platforms-item" data-toggle="list" href="#list-platforms" role="tab" aria-controls="platforms">What platforms does it run on?</a>
+                    <a class="list-group-item list-group-item-action" id="list-howto-item" data-toggle="list" href="#list-howto" role="tab" aria-controls="howto">How to use it?</a>
+                    <a class="list-group-item list-group-item-action" id="list-players-item" data-toggle="list" href="#list-players" role="tab" aria-controls="players">What players is it compatible with?</a>
+                    <a class="list-group-item list-group-item-action" id="list-troubleshooting-item" data-toggle="list" href="#list-troubleshooting" role="tab" aria-controls="troubleshooting">What to do if it doesn't work?</a>
+                    <a class="list-group-item list-group-item-action" id="list-other-projects-item" data-toggle="list" href="#list-other-projects" role="tab" aria-controls="other-projects">What made Tundra possible?</a>
+                    <a class="list-group-item list-group-item-action" id="list-naming-item" data-toggle="list" href="#list-naming" role="tab" aria-controls="naming">Why call it "Tundra"?</a>
+                    <a class="list-group-item list-group-item-action" id="list-affiliation-item" data-toggle="list" href="#list-affiliation" role="tab" aria-controls="affiliation">Is it affiliated with MyAnimeList?</a>
                 </div>
             </div>
             <div class="col-md-8">
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                    <div class="tab-pane fade show active" id="list-platforms" role="tabpanel" aria-labelledby="list-platforms-item">
                         Tundra is made specifically for Linux-based operating systems. The reason is that there are already great applications for macOS and Windows, so there is not much point in providing it for those platforms.
                     </div>
-                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                    <div class="tab-pane fade" id="list-howto" role="tabpanel" aria-labelledby="list-howto-item">
                         The usage is very simple:
                         <ol>
                             <li>First, you need to sign in to your MyAnimeList account with your MAL username and password.</li>
                             <li>Make sure that the title you are about to watch is marked as "watching" or "plan to watch" on your MAL account.</li>
-                            <li>Then, you need to run an MPRIS-enabled (see below) media player and play a local anime video file. Its title, poster picture and episode number will appear after a few seconds in Tundra window.</li>
+                            <li>Then, you need to run an MPRIS-enabled (see the FAQ section below) media player and play a local anime video file. Its title, poster picture and episode number will appear after a few seconds in Tundra window.</li>
                             <li>The episode will be scrobbled after you watch over half of the video. You will know once you see the notification!</li>
                         </ol>
                     </div>
-                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                    <div class="tab-pane fade" id="list-players" role="tabpanel" aria-labelledby="list-players-item">
                         Tundra should work with any local media player implementing MPRIS protocol. In particular, it should work without any problems with these players:
 
                         <ul>
                             <li><a href="https://www.videolan.org/vlc/index.html">VLC</a></li>
                             <li><a href="https://www.smplayer.info/">SMPlayer</a></li>
-                            <li><a href="https://mpv.io/">mpv</a> with <a href="https://github.com/hoyon/mpv-mpris">mpv-mpris</a>plugin</li>
+                            <li><a href="https://mpv.io/">mpv</a> with <a href="https://github.com/hoyon/mpv-mpris">mpv-mpris</a> plugin</li>
                         </ul>
 
                         It is not designed to work with players that do not implement MPRIS protocol, or with video streaming services running in web browsers.
                     </div>
-                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                    <div class="tab-pane fade" id="list-troubleshooting" role="tabpanel" aria-labelledby="list-troubleshooting-item">
+                        Here are general troubleshooting tips:
+                        <ul>
+                            <li>Make sure that you have working internet connection and you can access <a href="https://myanimelist.net/">myanimelist.net</a>.</li>
+                            <li>Check if the player you use support MPRIS API. Sometimes it can be enabled as a plugin.</li>
+                            <li>Make sure that you have watched over half of the video and the video is still being played when Tundra is running. It will not scrobble your episode if the video is paused, or you have watched less than half of the episode.</li>
+                        </ul>
+                        If it's still not working, please feel free to <a href="https://github.com/m4tx/tundra/issues">submit an issue on GitHub</a>.
+                    </div>
+                    <div class="tab-pane fade" id="list-other-projects" role="tabpanel" aria-labelledby="list-other-projects-item">
                         You can see all the technologies and projects used by visiting the <a href="https://github.com/m4tx/tundra">Tundra webpage on GitHub</a>. There are a few notable projects that made Tundra possible:
 
                         <ul>
-                            <li><a href="https://taiga.moe/">Taiga</a>, a similar app for Windows, with its two awesome side-projects: <a href="https://github.com/erengy/anitomy">Anitomy</a>and<a href="https://github.com/erengy/anime-relations">Anime Relations</a></li>
+                            <li><a href="https://taiga.moe/">Taiga</a>, a similar app for Windows, with its two awesome side-projects: <a href="https://github.com/erengy/anitomy">Anitomy</a> and <a href="https://github.com/erengy/anime-relations">Anime Relations</a></li>
                             <li><a href="https://github.com/SuperMarcus/myanimelist-api-specification">MyAnimeList Unofficial API Specification</a>, which made it possible to access MAL accounts and marking episodes as watched automatically</li>
                         </ul>
                     </div>
-                    <div class="tab-pane fade" id="naming" role="tabpanel" aria-labelledby="list-naming-list">
+                    <div class="tab-pane fade" id="list-naming" role="tabpanel" aria-labelledby="list-naming-item">
                         Well, there was not that much of thought put in it — if there is <a href="https://taiga.moe/">Taiga</a>, then why not Tundra?
                     </div>
-                    <div class="tab-pane fade" id="affiliation" role="tabpanel" aria-labelledby="list-affiliation-list">
+                    <div class="tab-pane fade" id="list-affiliation" role="tabpanel" aria-labelledby="list-affiliation-item">
                         No, this is absolutely independent project, not affiliated with MyAnimeList by any way.
                     </div>
                 </div>
